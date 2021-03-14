@@ -35,6 +35,9 @@ li a:hover:not(.active) {
   <li><a href="Help.html">Help page</a></li>
   <li><a href="index.html">Play</a></li>
 </ul>
+<link href="default.css" rel="stylesheet" />
+    <link href="dark.css" rel="stylesheet" />
+    <script src="script.js"></script>
 </nav>
 <head>
    <link rel="stylesheet" href="styles.css">
@@ -47,14 +50,12 @@ li a:hover:not(.active) {
         <p>Total endings found: </p>
         <p>Number of deaths</p>
         <script src="data.js" type="text/javascript"></script>
-        <div id="Settings">
-          <button onclick="myFunction()">Toggle on dark mode</button>
-        </div>
+      <div class="theme-switch">
+        <input type="checkbox" / <p>Dark mode toggle</p>
+      </div>
       <script>
       function myFunction() {
       var element = document.body;
       element.classList.toggle("dark-mode");
-    }
-</script>
     </body>
 </html>

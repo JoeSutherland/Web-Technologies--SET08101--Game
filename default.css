@@ -1,0 +1,83 @@
+:root {
+  --foreground-color: #000;
+  --background-color: #FFF;
+  --link-color: #07D;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--foreground-color);
+  font-family: 'Courier New', monospace;
+}
+
+a, a:visited {
+  color: var(--link-color);
+}
+
+h1 {
+  font-family: 'Courier New', monospace;
+  font-size: 300%;
+}
+p {
+  font-family: 'Courier New', monospace;
+  font-size: 150%;
+}
+li {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 100%;
+  float: center;
+  border-right:1px solid #bbb;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+  }
+
+nav {
+  text-align: center; 
+  font-family: 'Courier New', monospace;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+}
+
+header input[type="checkbox"] {
+  position: absolute;
+  right: 1em;
+}

@@ -29,6 +29,9 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 </style>
+ <link href="default.css" rel="stylesheet" />
+    <link href="dark.css" rel="stylesheet" />
+    <script src="script.js"></script>
 <nav>
 	<ul>
   <li><a class="active" href="#help">Help</a></li>
@@ -47,9 +50,9 @@ li a:hover:not(.active) {
           <p>Select one of the 4 options to progress through the game</p>
           <p>Play until you find all endings</p>
         </ol>
-        <div id="Settings">
-          <button onclick="myFunction()">Toggle on dark mode</button>
-        </div>
+        <div class="theme-switch">
+        <input type="checkbox" / <p>Dark mode toggle</p>
+      </div>
       <script>
       function myFunction() {
       var element = document.body;
