@@ -45,9 +45,16 @@ li a:hover:not(.active) {
     </head> 
     <body>
      <a href="#" onclick="deleteAllCookies()">Reset user stats</a> 
-        <p>Total games played: </p>
+        <p>Total games played: </p>  
         <p>Total time played: </p>
-        <p>Total endings found: </p>
+        <button onclick="myFunction()">Total endings found:</button>
+        <p id="Endings"></p>
+        <script>
+          function myFunction(){
+            var TotalEndings = ["Good ending", "Bad Ending", "Death Ending", "Escape Ending"];
+              document.getElementById("Endings").innerHTML = TotalEndings.length;
+          }
+        </script>
         <p>Number of deaths</p>
         <script src="data.js" type="text/javascript"></script>
       <div class="theme-switch">

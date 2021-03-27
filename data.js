@@ -6,6 +6,8 @@ TotalGamesPlayed = ['0'];
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  var TotalEndings ["Good ending", "Bad Ending", "Death Ending", "Escape Ending"]
+	TotalEndings.length
 }
 //localStorage.setItem('key', 'value');
 //alert(localStorage.getItem('key'));
@@ -18,6 +20,7 @@ function store(game, status){
 }
 function check(game){
     return localStorage.getItem(game);
+    return localStorage.length
 }
 
 window.onload = function() {
@@ -26,3 +29,5 @@ window.onload = function() {
     store("ending3", false);
     store("ending4", false);
 }
+
+
