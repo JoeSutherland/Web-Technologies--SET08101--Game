@@ -6,8 +6,6 @@ TotalGamesPlayed = ['0'];
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
-  var TotalEndings ["Good ending", "Bad Ending", "Death Ending", "Escape Ending"]
-	TotalEndings.length
 }
 //localStorage.setItem('key', 'value');
 //alert(localStorage.getItem('key'));
@@ -22,6 +20,26 @@ function check(game){
     return localStorage.getItem(game);
     return localStorage.length
 }
+
+function GamesStats(){
+	var TotalGamesPlayed = 
+        document.getElementById("Games").innerHTML = TotalGamesPlayed.length;
+ }
+
+ function TimeStats(){
+	var TotalTimePlayed = 
+        document.getElementById("TimePlayed").innerHTML = TotalTimePlayed.length;
+ }
+
+function EndingStats(){
+	var TotalEndings = ["Good ending", "Bad Ending", "Death Ending", "Escape Ending"];
+        document.getElementById("Endings").innerHTML = TotalEndings.length;
+ }
+
+function DeathStats(){
+	var TotalDeaths = 
+        document.getElementById("Deaths").innerHTML = TotalDeaths.length;
+ }
 
 window.onload = function() {
     store("ending1", false);
