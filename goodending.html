@@ -50,15 +50,21 @@ li a:hover:not(.active) {
     <body>
         <h1>Welcome to my text based Choose Your Own Adventure Game </h1>
         <h2>Dungeon of the abyss</h2>
-        
+        <script>
+        function addEnding(){
+          localStorage.setItem('Good Ending', 'Found');
+      }
+        </script>
         <p>You see a shovel next to the dirt patch you start to dig at the dirt patch. </p>
         <p>You see what appears to be a chest you dig until you can remove the chest</p>
         <p>You open the chest and find the long lost treasure</p>
         <p style="color:green;">You win the game! </p>
         <p style="color:gold;">Good ending found</p>
+
         <ul>
             <li><a href="index.html">Restart game</a></li>
         </ul>
+        <script src="data.js" type="text/javascript"></script>
         <div class="theme-switch">
         <input type="checkbox" / <p>Dark mode toggle</p>
       </div>

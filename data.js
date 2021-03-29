@@ -31,10 +31,19 @@ function GamesStats(){
         document.getElementById("TimePlayed").innerHTML = TotalTimePlayed.length;
  }
 
-function EndingStats(){
-	var TotalEndings = ["Good ending", "Bad Ending", "Death Ending", "Escape Ending"];
-        document.getElementById("Endings").innerHTML = TotalEndings.length;
- }
+function populateStorage(){
+	localStorage.setItem('Good Ending', 'Not found');
+	localStorage.setItem('Bad Ending', 'Not found');
+	localStorage.setItem('Escape Ending', 'Not found');
+	localStorage.setItem('Death Ending', 'Not found');
+
+	return localStorage.length;
+}
+
+//function EndingStats(){
+	//var TotalEndings = [];
+   //  document.getElementById("Endings").innerHTML = TotalEndings.length;
+ //}
 
 function DeathStats(){
 	var TotalDeaths = 
